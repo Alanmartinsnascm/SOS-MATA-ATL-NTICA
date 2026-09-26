@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Mata Atlântica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SOS MATA ATLÂNTICA</h1>
+    </header>
+
+ <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir ou fechar o menu">☰</label>
+        <ul>
+            <li><a href="#/inicio">Inicio</a></li>
+            <li class="tem-submenu">
+                <a href="#/inicio">Institucional</a>
+                <ul class="submenu">
+                    <li><a href="#/inicio">Quem Somos</a></li>
+                    <li><a href="#/cadastro">Cadastro</a></li>   
+                </ul>
+            </li>
+            <li><a href="#/cadastro">Cadastro</a></li>
+            <li><a href="#/cadastros">Cadastros <span id="contador-cadastros" class="badge badge-info"></span></a></li>
+            <li><a href="#/projetos">Projetos</a></li>
+        </ul>       
+ </nav>
+
+ 
+
+ <main id="app"></main>
+
+    
+ <footer>
+    <p>&copy; 2026 SOS Mata Atlântica</p>
+ </footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/cartoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/validacao.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/mascaras.js"></script>
+<script src="js/cadastro.js"></script>
+<script src="js/router.js"></script>
+
+</body>
+</html>
+    

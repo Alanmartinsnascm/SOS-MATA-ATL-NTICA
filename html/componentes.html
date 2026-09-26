@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes - SOS Mata Atlântica</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+      <h1>SOS MATA ATLÂNTICA</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Componentes de feedback</h2>
+            <h3>badges</h3>
+            <p>
+                <span class="badge badge-success">Novo</span>
+                <span class="badge badge-error">Urgente</span>
+                <span class="badge badge-warning">Em breve</span>
+                <span class="badge badge-info">Voluntário</span>
+            </p>
+            <h3>Alerta</h3>
+            <div class="alerta alerta-success" role="status">
+                <strong>Sucesso:</strong> seu cadastro foi enviado.
+            </div>
+            <div class="alerta alerta-error" role="alert">
+                <strong>Erro:</strong> verifique o CPF informado.
+            </div>
+            <div class="alerta alerta-warning" role="status">
+                <strong>Atenção:</strong> campos obrigatórios em branco.
+            </div>
+            <div class="alerta alerta-info" role="status">
+                <strong>Informação:</strong> respondemos em até 2 dias úteis.
+            </div>
+            <h3>Toast</h3>
+            <p>O aviso de confirmação aparece no canto inferior direito por alguns segundos.</p>
+            <div class="toast toast-success" role="status">
+                <strong>Cadastro enviado</strong> Obrigado por participar.
+            </div>
+            <h3>Modal</h3>
+            <p><a class="modal-botao" href="#modal-confirmacao">Abrir confirmação</a></p>
+            <div class="modal" id="modal-confirmacao" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+                <div class="modal-conteudo">
+                    <h3 id="modal-titulo">Confirmar envio</h3>
+                    <p>Deseja realmente enviar seu cadastro?</p>
+                    <a class="modal-botao" href="#">Fechar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 SOS Mata Atlântica</p>
+    </footer>
+
+</body>
+</html>
