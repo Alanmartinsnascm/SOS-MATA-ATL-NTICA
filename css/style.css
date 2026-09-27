@@ -54,7 +54,7 @@ button:hover {
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.35);
 }
 button:focus-visible {
-    outline: 3px solid var(--color-primary-dark);
+    outline: 3px solid var(--color-dark);
     outline-offset: 3px;
 }
 button:active {
@@ -99,7 +99,9 @@ body
     min-height: 100vh;
 
     font-family: Arial, Helvetica, sans-serif;
-font-size: var(--font-size-body);}
+    font-size: var(--font-size-body);
+    background-color: var(--color-page-bg);
+}
 header {grid-area: cabecalho; }
 nav {grid-area: menu; }
 main {grid-area: conteudo; }
@@ -135,6 +137,10 @@ footer {grid-area: rodape; }
     --color-button-hover: var(--color-info);
     --color-input-border: #6d2800c2;
 
+    /* Modo escuro: tokens que mudam de valor (redefinidos no media query abaixo) */
+    --color-page-bg: #ffffff;
+    --color-link: var(--color-primary-dark);
+
     /* Tipografia: 5 níveis, em rem (acompanha o tamanho de fonte do navegador) */
     --font-size-h1: 2.25rem;
     --font-size-h2: 1.75rem;
@@ -165,7 +171,7 @@ section {
     border-radius: 8px;
 }
 a {
-    color: var(--color-primary-dark);
+    color: var(--color-link);
 }
 a:hover {
     text-decoration: underline;
@@ -193,7 +199,7 @@ form {
 }
 
 input:focus, select:focus {
-    outline: 3px solid var(--color-primary-dark);
+    outline: 3px solid var(--color-dark);
     outline-offset: 2px;
 }
 
@@ -267,7 +273,7 @@ legend {
     padding: var(--space-sm);
     font-size: 2rem;
     text-align: center;
-    color: var(--color-primary-dark);
+    color: var(--color-link);
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -275,7 +281,7 @@ legend {
     color: var(--color-primary);
 }
 .menu-toggle:focus-visible + .menu-hamburguer {
-        outline: 3px solid var(--color-primary-dark);
+        outline: 3px solid var(--color-link);
         outline-offset: 3px;
 }
 
@@ -453,5 +459,17 @@ legend {
 }
 @media (max-width: 480px) {
     h1 {font-size: 1.75rem;}
+}
+
+/* Modo escuro: segue a preferencia do sistema operacional do usuario.
+   So redefine o fundo neutro da pagina e a cor dos links do menu, que
+   sao os dois unicos elementos que dependiam do fundo branco para ter
+   contraste. Secoes verdes, cartoes brancos e o modal continuam iguais,
+   pois ja tem cor de fundo propria e ja passam no contraste nos dois casos. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-page-bg: #121212;
+        --color-link: #81c784;
+    }
 }
 
