@@ -17,10 +17,10 @@ const paginas = {
     <section id="fale-conosco">
             <h2>Fale Conosco</h2>
             <address>
-                Contato: João Pensata<br>
-                +55 (21) 99987-6094
+                Contato: Atendimento SOS Mata Atlântica<br>
+                +55 (00) 00000-0000
             </address>
-            <a href="http://wa.me/5521999876094" target="_blank" rel="noopener noreferrer">Clique aqui para ser direcionado ao WhatsApp</a>
+            <a href="http://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Clique aqui para ser direcionado ao WhatsApp</a>
     </section>
 
     <section id="historia">
