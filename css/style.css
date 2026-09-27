@@ -54,7 +54,7 @@ button:hover {
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.35);
 }
 button:focus-visible {
-    outline: 3px solid var(--color-accent);
+    outline: 3px solid var(--color-primary-dark);
     outline-offset: 3px;
 }
 button:active {
@@ -132,7 +132,7 @@ footer {grid-area: rodape; }
 
     /* Cores próprias do formulário/botão (escolhidas manualmente) */
     --color-button: rgb(10, 117, 0);
-    --color-button-hover: #00a2ff;
+    --color-button-hover: var(--color-info);
     --color-input-border: #6d2800c2;
 
     /* Tipografia: 5 níveis, em rem (acompanha o tamanho de fonte do navegador) */
@@ -193,7 +193,7 @@ form {
 }
 
 input:focus, select:focus {
-    outline: 3px solid var(--color-accent);
+    outline: 3px solid var(--color-primary-dark);
     outline-offset: 2px;
 }
 
@@ -274,6 +274,10 @@ legend {
 .menu-hamburguer:hover {
     color: var(--color-primary);
 }
+.menu-toggle:focus-visible + .menu-hamburguer {
+        outline: 3px solid var(--color-primary-dark);
+        outline-offset: 3px;
+}
 
 @keyframes aparecer {
     from {
@@ -351,7 +355,7 @@ legend {
     z-index: 100;
 }
 
-.modal:target {
+.modal.modal-aberta {
     display: flex;
     animation: aparecer 0.3s ease;
 }
@@ -368,10 +372,13 @@ legend {
 .modal-botao {
     display: inline-block;
     padding: var(--space-sm) var(--space-lg);
+    border: none;
     border-radius: 5px;
     background-color: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
+    font: inherit;
+    cursor: pointer;
 }
 
 .cartao {

@@ -24,6 +24,7 @@ const paginas = {
     </section>
 
     <section id="historia">
+            <h2>Nossa História</h2>
             <details>
                 <summary>Clique aqui para conferir nossa história</summary>
                 <p>Na década de 1980, cientistas, empresários, jornalistas e defensores da questão ambiental se aproximam e lançam as bases para a criação da primeira ONG destinada a defender os últimos remanescentes de Mata Atlântica no país.</p>
@@ -156,6 +157,49 @@ const paginas = {
         ${itens}
         </section>
         `;
-    }   
+    },
+    componentes: `
+    <section>
+        <h2>Componentes de feedback</h2>
+
+        <h3>Badges</h3>
+        <p>
+            <span class="badge badge-success">Novo</span>
+            <span class="badge badge-error">Urgente</span>
+            <span class="badge badge-warning">Em breve</span>
+            <span class="badge badge-info">Voluntário</span>
+        </p>
+
+        <h3>Alertas</h3>
+        <div class="alerta alerta-success" role="status">
+            <strong>Sucesso:</strong> seu cadastro foi enviado.
+        </div>
+        <div class="alerta alerta-error" role="alert">
+            <strong>Erro:</strong> verifique o CPF informado.
+        </div>
+        <div class="alerta alerta-warning" role="status">
+            <strong>Atenção:</strong> campos obrigatórios em branco.
+        </div>
+        <div class="alerta alerta-info" role="status">
+            <strong>Informação:</strong> respondemos em até 2 dias úteis.
+        </div>
+
+        <h3>Toast</h3>
+        <p>O aviso de confirmação aparece no canto inferior direito por alguns segundos.</p>
+        <div class="toast toast-success" role="status">
+            <strong>Cadastro enviado!</strong> Obrigado por participar.
+        </div>
+
+        <h3>Modal</h3>
+        <p><button type="button" class="modal-botao" data-abrir-modal="modal-confirmacao">Abrir confirmação</button></p>
+        <div class="modal" id="modal-confirmacao" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+            <div class="modal-conteudo">
+                <h3 id="modal-titulo">Confirmar envio</h3>
+                <p>Deseja realmente enviar seu cadastro?</p>
+                <button type="button" class="modal-botao" data-fechar-modal>Fechar</button>
+            </div>
+        </div>
+    </section>
+    `
 };
 
