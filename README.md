@@ -2,6 +2,8 @@
 
 Site institucional de uma ONG ambiental, construído como projeto acadêmico da disciplina de Desenvolvimento Front-end. O site é uma **Single Page Application (SPA)** feita com HTML, CSS e JavaScript puros, sem back-end.
 
+🔗 **Site publicado:** https://alanmartinsnascm.github.io/SOS-MATA-ATL-NTICA/#/inicio
+
 ## Funcionalidades
 
 - **Navegação sem recarregar a página**, com roteamento por hash (`#/inicio`, `#/cadastro`, `#/cadastros`, `#/projetos`).
@@ -11,6 +13,7 @@ Site institucional de uma ONG ambiental, construído como projeto acadêmico da 
 - **Listagem de cadastros e de projetos** gerada por um sistema de templates em JavaScript.
 - **Menu responsivo** com submenu no desktop e ícone hambúrguer no celular.
 - **Layout responsivo** com CSS Grid e Flexbox e cinco pontos de quebra.
+- **Acessibilidade em conformidade com o WCAG 2.1, nível AA**: contraste de cores verificado, navegação completa por teclado, rótulos em todos os campos, textos alternativos nas imagens e estrutura de títulos consistente.
 
 ## Tecnologias
 
@@ -36,12 +39,15 @@ sos-mata-atlantica/
     ├── validacao.js   # regras e feedback de validação
     ├── mascaras.js    # formatação de campos
     ├── cadastro.js    # eventos do formulário
+    ├── modal.js       # abertura/fechamento de modais (clique e tecla Esc)
     └── menu.js        # comportamento do menu e contador
 ```
 
 ## Como executar
 
-Não há instalação nem etapa de build.
+**Opção 1 — acessar o site publicado:** https://alanmartinsnascm.github.io/SOS-MATA-ATL-NTICA/#/inicio
+
+**Opção 2 — rodar localmente**, sem instalação nem etapa de build:
 
 1. Clone o repositório:
    ```
@@ -77,6 +83,10 @@ O repositório segue o modelo GitFlow:
 - `hotfix/*`: correções urgentes a partir do `main`.
 
 As mensagens de commit seguem o padrão `tipo: descrição` (`feat`, `fix`, `docs`, `chore`).
+
+## Versionamento
+
+O projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/) (`MAJOR.MINOR.PATCH`). A versão atual é a [`v1.0.0`](https://github.com/Alanmartinsnascm/SOS-MATA-ATL-NTICA/releases/tag/v1.0.0), a primeira versão estável e publicada do projeto.
 
 ## Autor
 
