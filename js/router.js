@@ -10,6 +10,9 @@ function mostrarPagina(nome) {
     if (nome === "cadastro") {
         configurarcadastro ();
     }
+    if (nome === "componentes") {
+        configurarModais();
+    }
 }
 
 function rotear() {
